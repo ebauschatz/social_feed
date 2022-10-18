@@ -8,8 +8,8 @@ const Post = (props) => {
                 {props.postText}
             </div>
             <div>
-                <i class="fa fa-thumbs-up pull-right"></i>
                 <i class="fa fa-thumbs-down pull-right"></i>
+                <i class="fa fa-thumbs-up pull-right"></i>
             </div>
         </div>
     );

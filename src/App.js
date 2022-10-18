@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Post from './Components/Post/Post';
+import PostList from './Components/PostList/PostList.jsx';
 
 
 function App() {
-  const [posts, setPosts] = useState([{userName: 'Emily B', postText: 'This is a sample post.'}]);
+  const [posts, setPosts] = useState([{userName: 'Emily B', postText: 'This is a sample post.'}, {userName: 'Rachel M', postText: 'This is a way cooler sample post.'}]);
 
   return (
     <div>
-      <Post userName={posts[0].userName} postText={posts[0].postText} />
+      <PostList posts={posts} />
     </div>
   );
 }
