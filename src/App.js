@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PostList from './Components/PostList/PostList.jsx';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm.jsx';
+import NavBar from './Components/NavBar/NavBar.jsx';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div>
+      <NavBar />
       <CreatePostForm addNewPost={addNewPost}/>
       <PostList posts={posts} />
     </div>
