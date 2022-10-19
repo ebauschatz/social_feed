@@ -1,0 +1,9 @@
+.post-list-container {
+    border: 1px solid;
+    border-color: black;
+    border-radius: 0.5em;
+    background-color: white;
+    overflow: hidden;
+    margin: 2em 0em;
+    box-shadow: 0.3rem 0.3rem 0.2rem #c4d7d4;
+}

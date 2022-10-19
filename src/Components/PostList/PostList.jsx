@@ -1,8 +1,9 @@
 import Post from '../Post/Post'
+import './PostList.css'
 
 const PostList = (props) => {
     return (
-        <div>
+        <div className='post-list-container'>
             {props.posts.map((post) => <Post userName={post.userName} postText={post.postText}/>)}    
         </div>            
     );
