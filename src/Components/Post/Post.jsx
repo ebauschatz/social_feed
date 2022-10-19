@@ -1,15 +1,15 @@
 const Post = (props) => {
     return (
-        <div>
+        <div className="border-bottom p-2 px-4">
             <div>
                 <b>{props.userName}</b>
             </div>
-            <div>
+            <div className="py-1">
                 {props.postText}
             </div>
-            <div>
-                <i class="fa fa-thumbs-down pull-right"></i>
-                <i class="fa fa-thumbs-up pull-right"></i>
+            <div className="d-flex justify-content-end">
+                <i className="fa fa-thumbs-down px-1"></i>
+                <i className="fa fa-thumbs-up px-1"></i>
             </div>
         </div>
     );
