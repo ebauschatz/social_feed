@@ -18,7 +18,7 @@ function App() {
       <div className='row'>
         <NavBar />
       </div>
-      <div className='row justify-content-center background-blue'>
+      <div className='row justify-content-center background-blue full-height'>
         <div className='col-8'>
           <CreatePostForm addNewPost={addNewPost}/>
           <PostList posts={posts} />
