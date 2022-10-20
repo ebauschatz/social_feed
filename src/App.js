@@ -16,6 +16,11 @@ function App() {
     setPosts(tempPosts);
   }
 
+  function deletePost(postIndex) {
+    let tempPosts = posts.filter((post, index) => index !== postIndex);
+    setPosts(tempPosts);
+  }
+
   return (
     <div className='container-fluid'>
       <div className='row'>
@@ -24,7 +29,7 @@ function App() {
       <div className='row justify-content-center background-blue'>
         <div className='col-8'>
           <CreatePostForm addNewPost={addNewPost}/>
-          <PostList posts={posts} />
+          <PostList posts={posts} deletePost={deletePost}/>
         </div>
       </div>
     </div>
