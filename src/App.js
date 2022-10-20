@@ -9,7 +9,7 @@ function App() {
   const [posts, setPosts] = useState([{userName: 'Emily B', postText: 'This is a sample post.'}, {userName: 'Rachel M', postText: 'This is a way cooler sample post.'}]);
 
   function addNewPost(newPost) {
-    let tempPosts = [newPost, ...posts];
+    let tempPosts = [...posts, newPost];
     setPosts(tempPosts);
   }
 
@@ -18,7 +18,7 @@ function App() {
       <div className='row'>
         <NavBar />
       </div>
-      <div className='row justify-content-center background-blue full-height'>
+      <div className='row justify-content-center background-blue'>
         <div className='col-8'>
           <CreatePostForm addNewPost={addNewPost}/>
           <PostList posts={posts} />
