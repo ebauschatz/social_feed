@@ -1,0 +1,11 @@
+.no-reaction {
+    color: gray;
+}
+
+.like-reaction {
+    color: green;
+}
+
+.dislike-reaction {
+    color: red;
+}
