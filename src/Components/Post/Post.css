@@ -9,3 +9,9 @@
 .dislike-reaction {
     color: red;
 }
+
+.date-time-font {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: x-small;
+}

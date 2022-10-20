@@ -7,7 +7,11 @@ const CreatePostForm = (props) => {
 
     function handleSubmit(event) {
         event.preventDefault();
-        let newPost = {userName: userName, postText: postText};
+        let currentDateTime = new Date();
+        let currentDate = currentDateTime.toLocaleDateString();
+        let currentTime = currentDateTime.toLocaleTimeString();
+
+        let newPost = {userName: userName, postText: postText, postDate: currentDate + " " + currentTime};
         props.addNewPost(newPost);
         setUserName("");
         setPostText("");

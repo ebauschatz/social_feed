@@ -6,7 +6,10 @@ import './App.css';
 
 
 function App() {
-  const [posts, setPosts] = useState([{userName: 'Emily B', postText: 'This is a sample post.'}, {userName: 'Rachel M', postText: 'This is a way cooler sample post.'}]);
+  let currentDateTime = new Date();
+  let currentDate = currentDateTime.toLocaleDateString();
+  let currentTime = currentDateTime.toLocaleTimeString();
+  const [posts, setPosts] = useState([{userName: 'Emily B', postText: 'This is a sample post.', postDate: currentDate + " " + currentTime}, {userName: 'Rachel M', postText: 'This is a way cooler sample post.', postDate: currentDate + " " + currentTime}]);
 
   function addNewPost(newPost) {
     let tempPosts = [...posts, newPost];

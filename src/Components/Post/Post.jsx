@@ -37,6 +37,9 @@ const Post = (props) => {
             <div>
                 <b>{props.userName}</b>
             </div>
+            <div className='date-time-font'>
+                {props.postDate}
+            </div>
             <div className="py-1">
                 {props.postText}
             </div>
