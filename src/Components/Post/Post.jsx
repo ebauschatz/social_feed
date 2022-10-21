@@ -32,10 +32,20 @@ const Post = (props) => {
         }
     }
 
+    function handleDeleteClick() {
+        props.deletePost(props.postIndex);
+    }
+
     return (
         <div className="border-bottom p-2 px-4">
+            <div className="d-flex justify-content-end">
+                <i className='fa fa-times-rectangle-o delete-icon' onClick={handleDeleteClick}></i>
+            </div>
             <div>
                 <b>{props.userName}</b>
+            </div>
+            <div className='date-time-font'>
+                {props.postDate}
             </div>
             <div className="py-1">
                 {props.postText}

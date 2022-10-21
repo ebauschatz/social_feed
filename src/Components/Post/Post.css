@@ -9,3 +9,16 @@
 .dislike-reaction {
     color: red;
 }
+
+.date-time-font {
+    font-weight: lighter;
+    font-size: x-small;
+}
+
+.delete-icon {
+    color: gray;
+}
+
+.delete-icon:hover {
+    color: red;
+}
