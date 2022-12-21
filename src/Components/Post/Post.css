@@ -17,8 +17,19 @@
 
 .delete-icon {
     color: gray;
+    padding: 0rem 0.1rem;
 }
 
 .delete-icon:hover {
     color: red;
+}
+
+.edit-icon {
+    color: gray;
+    padding: 0rem 0.1rem;
+}
+
+.edit-icon:hover {
+    color: gold;
+    padding: 0rem 0.1rem;
 }

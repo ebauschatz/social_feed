@@ -39,6 +39,7 @@ const Post = (props) => {
     return (
         <div className="border-bottom p-2 px-4">
             <div className="d-flex justify-content-end">
+                <i className='fa fa-edit edit-icon'></i>
                 <i className='fa fa-times-rectangle-o delete-icon' onClick={handleDeleteClick}></i>
             </div>
             <div>
